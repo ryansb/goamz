@@ -13,6 +13,9 @@ const (
 	TYPE_NUMBER_SET = "NS"
 	TYPE_BINARY_SET = "BS"
 
+	TYPE_HASH_KEY  = "HASH"
+	TYPE_RANGE_KEY = "RANGE"
+
 	COMPARISON_EQUAL                    = "EQ"
 	COMPARISON_NOT_EQUAL                = "NE"
 	COMPARISON_LESS_THAN_OR_EQUAL       = "LE"

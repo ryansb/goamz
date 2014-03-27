@@ -38,8 +38,8 @@ var item_suite = &ItemSuite{
 			dynamodb.AttributeDefinitionT{"TestRangeKey", "N"},
 		},
 		KeySchema: []dynamodb.KeySchemaT{
-			dynamodb.KeySchemaT{"TestHashKey", "HASH"},
-			dynamodb.KeySchemaT{"TestRangeKey", "RANGE"},
+			dynamodb.KeySchemaT{"TestHashKey", dynamodb.TYPE_HASH_KEY},
+			dynamodb.KeySchemaT{"TestRangeKey", dynamodb.TYPE_RANGE_KEY},
 		},
 		ProvisionedThroughput: dynamodb.ProvisionedThroughputT{
 			ReadCapacityUnits:  1,

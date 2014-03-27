@@ -92,9 +92,9 @@ func (t *TableDescriptionT) BuildPrimaryKey() (pk PrimaryKey, err error) {
 		}
 
 		switch k.KeyType {
-		case "HASH":
+		case TYPE_HASH_KEY:
 			pk.KeyAttribute = attr
-		case "RANGE":
+		case TYPE_RANGE_KEY:
 			pk.RangeAttribute = attr
 		}
 	}
