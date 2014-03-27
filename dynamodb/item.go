@@ -124,8 +124,8 @@ func (t *Table) GetItem(key *Key) (map[string]*Attribute, error) {
 	return t.getItem(key, false)
 }
 
-func (t *Table) GetItemConsistent(key *Key, consistentRead bool) (map[string]*Attribute, error) {
-	return t.getItem(key, consistentRead)
+func (t *Table) GetItemConsistent(key *Key) (map[string]*Attribute, error) {
+	return t.getItem(key, true)
 }
 
 func (t *Table) getItem(key *Key, consistentRead bool) (map[string]*Attribute, error) {
